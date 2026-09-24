@@ -19,12 +19,14 @@
 		<style>
 			.site-hero{background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url("data/NVIDIA_Lnkd.jpg") center/cover no-repeat #1a1a1a;padding:48px 16px;margin:0 0 16px 0;text-align:center;border-radius:8px;}
 			.site-hero p{margin:0;}
+			.site-hero .site-motto{margin:10px 0 0 0;color:#ffffff;font-size:17px;font-weight:300;letter-spacing:0.02em;text-shadow:0 2px 6px rgba(0,0,0,0.6);}
 			.site-hero name{color:#ffffff;text-shadow:0 2px 6px rgba(0,0,0,0.6);}
 		</style>
 		<header class="site-hero">
 			<p>
 				<name>Physical AI and Autonomous Systems Research</name>
 			</p>
+			<p class="site-motto">Turning complex research challenges into clear, actionable projects.</p>
 		</header>
 		<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>										
 			<tr style="padding:0px">
@@ -40,7 +42,7 @@
 					  <p style="text-align:left">
 	  					  <font size="+2">Jose M. Alvarez</font>
 					  </p>
-					  I lead the Physical AI and Autonomous Systems Research Group at NVIDIA, CA, USA. Our research looks at autonomy at the system level. We develop models that don’t just perceive the world, but also predict it, simulate it, and reason about counterfactuals before they act. They then improve continuously through closed-loop data generation and evaluation. This includes world models, end-to-end driving, vision-language reasoning, and efficient deployment on the edge.
+					  I lead the Physical AI and Autonomous Systems Research Group at NVIDIA, CA, USA. We build autonomous systems that perceive, predict, simulate, and reason before they act, and that keep improving through closed-loop data and evaluation.
 					  <br>
 					<p style="text-align:left">
 						<a href="https://www.linkedin.com/in/josemalvarezlopez/" target="_blank"><i class="fab fa-fw fa-linkedin"></i>LinkedIn</a>&nbsp &nbsp						
@@ -102,6 +104,11 @@
 				</div>
 				<div class="year-panel" role="tabpanel" id="news-2026" aria-labelledby="news-tab-2026">
 				<ul>
+						<li>1 Paper accepted to NeurIPS 2026!
+							<ul>
+							<li><a href="https://arxiv.org/abs/2609.07049" target="_blank">LDiP: Large Discrete Policy: Advancing Explicit Behavior Modeling with Stochastic Iterative Scoring</a></li>
+							</ul>
+						</li>
 						<li>We are organizing the <a href="https://www.worldmodels-physicalai.com/" target="_blank">World Models in Physical AI</a> workshop at NeurIPS 2026.</li>
 						<li>I gave an invited lecture at the ELLIS Summer School on Autonomous Driving in Barcelona: <a href="data/ELLIS_e2e_release.pdf" target="_blank">End-to-End Models for Autonomous Driving: From Direct Prediction to Counterfactual Deliberation on the Edge</a>.</li>
 						<li>I gave an invited talk at the DriveX Workshop @ ECCV 2026: <a href="data/ECCV2026_SafeAutonomy_Release.pdf" target="_blank">Beyond Prediction: Counterfactual Deliberation for L4 Autonomy</a>.</li>
@@ -287,6 +294,7 @@
 					.research-data{border-top-color:#1772d0;}
 					.research-efficiency{border-top-color:#f09228;}
 					.research-synthetic{border-top-color:#8a5cc4;}
+					.research-safety{border-top-color:#d64545;}
 					.research-card h3{font-size:17px;margin:0 0 6px 0;}
 					.research-blurb{font-size:13px;color:#5f6b7a;margin:0 0 8px 0;line-height:1.4;}
 					.research-papers{list-style:none;margin:0;padding:0;}
@@ -298,6 +306,7 @@
 						<h3>Multimodal Planners</h3>
 						<p class="research-blurb">End-to-end planners that generate and score diverse trajectory candidates, reason about alternatives, and learn from closed-loop feedback.</p>
 						<ul class="research-papers">
+							<li><a href="https://arxiv.org/abs/2609.07049" target="_blank">LDiP: Large Discrete Policy: Advancing Explicit Behavior Modeling with Stochastic Iterative Scoring</a><span class="research-venue">NeurIPS 2026</span></li>
 							<li><a href="https://arxiv.org/abs/2510.24108" target="_blank">ZTRS: Zero-Human Demonstration End-to-end Autonomous Driving with Trajectory Scorer</a><span class="research-venue">ECCV 2026</span></li>
 							<li><a href="https://arxiv.org/abs/2604.03581" target="_blank">HAD: Combining Hierarchical Diffusion with Metric-Decoupled RL for End-to-End Driving</a><span class="research-venue">ECCV 2026</span></li>
 							<li><a href="https://arxiv.org/abs/2506.06659" target="_blank">DriveSuprim: Towards Precise Trajectory Selection for End-to-End Planning</a><span class="research-venue">AAAI 2026</span></li>
@@ -306,11 +315,23 @@
 							<li><a href="https://arxiv.org/abs/2406.06978" target="_blank">Hydra-MDP: End-to-end Multimodal Planning with Multi-target Hydra-Distillation</a><span class="research-venue">Winner, CVPR 2024 End-to-End Driving Challenge · <a href="https://github.com/NVlabs/Hydra-MDP" target="_blank">Code</a></span></li>
 						</ul>
 					</div>
+					<div class="research-card research-safety">
+						<h3>Safety and Evaluation for Autonomous Systems</h3>
+						<p class="research-blurb">Measuring driving quality the way humans judge it, and testing and training systems proactively on the safety-critical cases that matter most.</p>
+						<ul class="research-papers">
+							<li><a href="https://arxiv.org/abs/2607.20532" target="_blank">Position: Stop Reactively Patching Your Model Every Time and Start Proactive Test-Driven AI Development</a><span class="research-venue">ICML 2026, Position Paper &middot; <a href="https://research.nvidia.com/labs/sil/projects/position-proactive-correction/site/" target="_blank">Project</a></span></li>
+							<li><a href="https://arxiv.org/abs/2606.17362" target="_blank">DriveJudge: Rethinking Autonomous Driving Evaluation with Vision-Language Models</a><span class="research-venue">arXiv 2026</span></li>
+							<li><a href="https://arxiv.org/abs/2510.13108" target="_blank">DriveCritic: Towards Context-Aware, Human-Aligned Evaluation for Autonomous Driving with Vision-Language Models</a><span class="research-venue">ICRA 2026 &middot; <a href="https://song-jingyu.github.io/DriveCritic" target="_blank">Project</a> &middot; <a href="https://github.com/Song-Jingyu/DriveCritic" target="_blank">Code</a></span></li>
+							<li><a href="https://arxiv.org/abs/2503.03957" target="_blank">Enhancing Autonomous Driving Safety with Collision Scenario Integration</a><span class="research-venue">IROS 2025, Oral &middot; <a href="https://nvlabs.github.io/SafeHydra/" target="_blank">Project</a></span></li>
+						</ul>
+					</div>
 					<div class="research-card research-data">
 						<h3>Data-Centric AV</h3>
 						<p class="research-blurb">Deciding which data to collect, label, and train on, so that models improve efficiently as data grows rather than by volume alone.</p>
 						<ul class="research-papers">
+							<li><a href="https://arxiv.org/abs/2607.22697" target="_blank">Test-Time Coverage (TTCov): Test-Conditioned Data Curation for Deployment-Aware Learning</a><span class="research-venue">arXiv 2026 &middot; <a href="https://research.nvidia.com/labs/sil/projects/ttcov/site/" target="_blank">Project</a></span></li>
 							<li><a href="https://arxiv.org/abs/2604.08366" target="_blank">Scaling-Aware Data Selection for End-to-End Autonomous Driving Systems</a><span class="research-venue">CVPR 2026</span></li>
+							<li><a href="https://arxiv.org/abs/2409.13860" target="_blank">SSE: Multimodal Semantic Data Selection and Enrichment for Industrial-scale Data Assimilation</a><span class="research-venue">KDD 2025</span></li>
 							<li><a href="https://arxiv.org/abs/2301.03992" target="_blank">Vision Transformers are Good Mask Auto-Labelers</a><span class="research-venue">CVPR 2023 · <a href="https://github.com/NVlabs/mask-auto-labeler" target="_blank">Code</a></span></li>
 							<li><a href="https://arxiv.org/abs/2210.01234" target="_blank">Optimizing Data Collection for Machine Learning</a><span class="research-venue">NeurIPS 2022</span></li>
 							<li><a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Mahmood_How_Much_More_Data_Do_I_Need_Estimating_Requirements_for_CVPR_2022_paper.pdf" target="_blank">How Much More Data Do I Need? Estimating Requirements for Downstream Tasks</a><span class="research-venue">CVPR 2022</span></li>
